@@ -1,8 +1,4 @@
-*.{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
+
 .logo{
   margin-right: 15px;
 }
@@ -11,6 +7,7 @@
   margin: auto;
   padding: 0;
   max-width: fit-content;
+  width: 100%;
   
 }
 button:hover{
@@ -42,34 +39,36 @@ button:hover{
  }
 .topleft
 {
-    height: 40%;
-    margin-left: 80px;
-    margin-top: 37px;
-    display: flex;
-    font-size: 30px;
-    letter-spacing: 12;
-    font-family: 'poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 48px;
+  height: 40%;
+  margin-top: 37px;
+  display: flex;
+  font-size: 30px;
+  letter-spacing: 12;
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 48px;
    
 }
-.top-nav{
-  width: 50%;
-  justify-content: space-evenly;
-  margin-left: 100px;
+.top-nav
+{  
+  display: flex;  
+  justify-content: flex-end; 
+  width: 100%;
+  padding: 20px 0; 
+  background-color: #fff; 
 }
+
 
 
 .top-nav ul{
-  display:flex;
-  list-style-type: none;
-  margin-top: 52px;
-  justify-content: space-between;
-  height: 41px;
-  margin-right: 100px;
-  text-align: right;
-  margin-left: 250px;
+  display: flex;
+  list-style: none;
+  justify-content:space-between; 
+  align-items:end;
+  gap: 30px;
+  padding: 0;
+
  }
 a{
     text-decoration: none;
@@ -77,28 +76,27 @@ a{
     color: black;
 }
 
-  .topright{
-    width: 30%;
-    height: 60%;
+  .topright{ 
     display: flex;
-    margin-top: 37px;
-    word-spacing: 30px;
-    font-family: 'poppins', sans-serif;
-    letter-spacing: 2%;
-    line-height: 24px;
-    padding-top: 10px;
-    margin-right: 10px;
-    
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+}
+.buttons{
+  display: flex;
+  gap:20px;
 }
   .signin
    {
-        background-color: #ffffff; 
-        border-color: #BCD0E5;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
+    background-color: #ffffff; 
+    border-color: #BCD0E5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
   .signup
   {
@@ -114,7 +112,9 @@ a{
  }
  .heading1{
     font-family: 'poppins', sans-serif;
-    margin-left: 110px;
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
     font-size: 50px;
     font-weight: 700;
     line-height: 76px;
@@ -122,26 +122,24 @@ a{
     
  }
  .bottomleft1{
-    width: 48%;  
-    margin-right: 3%;
+    width: 45%;  
  }
  .paragraph1{
-    margin-left: 110px;
     margin-top: 35px;        
     font-size: 20px;
     font-family: 'poppins',sans-serif;
     line-height: 32px;
     letter-spacing: 2.5%;
     height: 18%;
-    width: 458px;
-    text-align: justify;
+    text-align:left;
     
    }
    .bottomleftfirstbutton1{
     display: flex;
+    justify-content: flex-start;
+   
    }
 .getstartedbutton1{
-    margin-left: 110px;
     margin-top: 35px;
     height: 12%;
     background-color: #FF9900; 
@@ -184,13 +182,9 @@ a{
 .bottomright1{
     width:40%;
 }
-
-.image1 {
-    width: 650px;
-    height: 603px;
-}
 .bottomsection1{
   display: flex;
+  justify-content: center;
   padding-top: 100px;
 }
 .bottomsection2{
@@ -204,7 +198,7 @@ a{
   text-align: center;
   font-size: 45px;
   
-  margin-right: 200px;
+  
 }
 .bottomsection3{
   display: flex;
@@ -215,7 +209,7 @@ a{
 .bottom3{
   text-align: left;
   font-size: 20px;
-  width: 248px;
+  max-width: 248px;
 
 }
 .bottom3heading{
@@ -227,26 +221,32 @@ a{
   
 }
 .bottomsection3button{
+  display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
-  margin-left: 650px;
+ 
 }
 .bottomsection4{
   margin-top: 20px;
   display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-  .bottom4left{
-    width: 40%;  
-    margin-right: 104px;
-   }
- .bottom4right{
-  width:486px;
+  justify-content: space-evenly; 
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  padding: 10px;
 
 }
+  /*.bottom4left{
+    width: 30%;  
+    flex:1;
+   }
+ .bottom4right{
+   flex:1;
+   max-width:486px;
+
+}*/
 .smallhead{
   font-family: 'poppins';
   font-size: 16px;
@@ -295,22 +295,18 @@ ul{
 }
 
 .footer{
-  width:100%;
-  height:308px;
-  margin-top: 0;
-  border-top: none;
-  box-shadow:none;
-  gap: 50px;
   display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;
 }
 footer.topleft{
   height: 28px;
 }
 .footer1{
-  display: flex
-;
+  display: flex;
     flex-wrap: wrap;
-    width: 72px;
+    max-width: 72px;
     height: 140px;
     font-family: 'Poppins';
     margin-top: 100px;
@@ -320,7 +316,7 @@ footer.topleft{
 .footer2{
   display: flex;
   flex-wrap: wrap;
-  width: 140px;
+  max-width: 140px;
   margin-top: 100px;
   height: 160px;
   font-family: 'poppins';
