@@ -121,8 +121,11 @@ a{
     letter-spacing: 2%;
     
  }
- .bottomleft1{
-    width: 45%;  
+ .bottomleft1{ 
+  justify-content: space-between; 
+  align-items: center;
+  padding :80px;
+
  }
  .paragraph1{
     margin-top: 35px;        
@@ -179,9 +182,9 @@ a{
 .videolink:hover {
   color: black; 
 }
-.bottomright1{
+/*.bottomright1{
     width:40%;
-}
+}*/
 .bottomsection1{
   display: flex;
   justify-content: center;
@@ -205,11 +208,12 @@ a{
   justify-content:space-evenly;
   height: 204px;
   align-items:center;
+
   }
 .bottom3{
   text-align: left;
   font-size: 20px;
-  max-width: 248px;
+  
 
 }
 .bottom3heading{
@@ -229,24 +233,11 @@ a{
  
 }
 .bottomsection4{
-  margin-top: 20px;
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-around; 
   align-items: center;
-  width: 100%;
-  gap: 30px;
-  padding: 10px;
-
+  
 }
-  /*.bottom4left{
-    width: 30%;  
-    flex:1;
-   }
- .bottom4right{
-   flex:1;
-   max-width:486px;
-
-}*/
 .smallhead{
   font-family: 'poppins';
   font-size: 16px;
